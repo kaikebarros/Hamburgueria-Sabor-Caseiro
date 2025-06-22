@@ -1,0 +1,142 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  background-color: black;
+  color: #fff;
+overflow-x: hidden;
+
+}
+
+
+.titulo {
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+
+
+
+}
+
+
+
+.carrossel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.3;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  transform: translateY(-10px) scale(1.03);
+  transition: 0.7s;
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgb(109, 13, 13);
+
+}
+
+.h2:hover {
+  transform: translateY(-10px) scale(1.03);
+  transition: 0.7s;
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgb(109, 13, 13);
+}
+
+
+.cardapio {
+  width: 100%;
+  height: auto;
+}
+
+
+.cardapio:hover {
+  transform: translateY(-10px) scale(1.03);
+  transition: 0.7s;
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgb(109, 13, 13);
+}
+
+.footer {
+  background: #272424;
+  color: #f5f5f5;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+.footer .social {
+  margin: 1rem 0;
+}
+
+.footer .social a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.footer .social img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: transform 0.2s;
+}
+
+.footer .social img:hover {
+  transform: scale(1.1);
+}
+
+.footer .container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
